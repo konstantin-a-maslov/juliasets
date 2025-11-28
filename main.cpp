@@ -58,9 +58,9 @@ void display() {
     glBegin(GL_POINTS);
     for(int i = -windowSize/2; i <= windowSize/2; ++i) {
         for(int j = -windowSize/2; j <= windowSize/2; ++j) {
-            const double r = coloringBuffer[i + windowSize/2][j + windowSize/2].r;
-            const double g = coloringBuffer[i + windowSize/2][j + windowSize/2].g;
-            const double b = coloringBuffer[i + windowSize/2][j + windowSize/2].b;
+            const float r = coloringBuffer[i + windowSize/2][j + windowSize/2].r;
+            const float g = coloringBuffer[i + windowSize/2][j + windowSize/2].g;
+            const float b = coloringBuffer[i + windowSize/2][j + windowSize/2].b;
 
             glColor3f(r, g, b);
             glVertex2f(i, j);
